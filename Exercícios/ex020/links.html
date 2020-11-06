@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links </title>
+    <style>
+         
+     /*     **** SELETORES PERSONALIZADOS ***** 
+      # = id :  (Quando eu quiser identificar um elemento, só posso usar uma vez para cada página)
+      
+      . = Class (Atribuir uma classe para todos que foram usar aquela configuração) 
+      
+      : = pseudo-class ( Para indicar o estado de um elemento. Ex: Se eu quiser que "<p" class="importante"> acende a luz quando eu passar o mouse eu uso .p:hover { backrgound-color: yellow; }  )
+     
+     :: = Pseudo-elemento ( Usar quando quero inserir qualquer informação relevante aquele   palavra) 
+     
+     > = Children ( Me informar ????? )
+     */      
+         
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+         }
+
+  /* tag "a" link */   
+          a { 
+             color: red;
+             text-decoration: none;
+             font-weight: bold;
+         }
+ 
+ /* Link visitado */          
+          a:visited {
+                color: darkred;            
+          } 
+           a:hover {
+                 color: black;
+                 text-decoration: underline;      
+           }   
+           a:active {
+                color: yellow;
+           }
+           .importante {
+                  background-color: rgb(134, 106, 106);       
+           } 
+
+           .importante::before {
+               content: ' [Link] ✤';
+
+           }
+           .importante::after {
+               content: ' [Link] ✤';
+           }
+    </style>
+</head>
+<body>
+      <h1>Personalizando links</h1>
+      <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Repositório GitHUb</a></li>
+        <li><a href="https://www.youtube.com/cursoemvideo/" target="_blank" rel="external" class="importante">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="external" class="importante">Site do Cursoemvideo</a></li>
+
+
+      </ul>       
+
+</body>
+</html>
