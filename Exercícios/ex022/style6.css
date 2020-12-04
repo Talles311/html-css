@@ -1,18 +1,25 @@
 @charset "UTF-8"; 
 
 body {
+   
     height: 96vh;
     background-color: black;
     background-image: url('imagens/wallpaper002.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; /* "contain" (100% exibida), cover (cobrir a tela inteira mas cortando a imagem, mas ocupa a tela inteira*/
+    
+    background-size: cover; /* "contain" (100% exibida), cover (cobrir a tela inteira mas cortando a imagem, mas ocupa a tela inteira */
+    
     background-attachment: fixed;
+    
+     
+   /* background:black url('imagens/wallpaper002.jpg') center center no-repeat fixed; */
+ 
 }
 
 main {
    background-color: white;
-   width: 400px;
+   max-width: 700px;
    padding: 10px;
    margin: auto;
    border: 1px solid darkblue;
@@ -20,6 +27,9 @@ main {
    border-radius: 15px;
    text-indent: 30px;
    text-align: justify;
+}
 
+main h1 {
+       text-align: center;
 }
 
