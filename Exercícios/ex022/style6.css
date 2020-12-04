@@ -7,6 +7,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; /* "contain" (100% exibida), cover (cobrir a tela inteira mas cortando a imagem, mas ocupa a tela inteira*/
+    background-attachment: fixed;
 }
 
 main {
@@ -17,6 +18,8 @@ main {
    border: 1px solid darkblue;
    box-shadow: 0px 3px 60px 10px black;
    border-radius: 15px;
+   text-indent: 30px;
+   text-align: justify;
 
 }
 
